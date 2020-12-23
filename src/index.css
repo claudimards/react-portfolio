@@ -164,27 +164,6 @@ img {
       width: 80px;
       top: 3rem;
   }
-
-  .about__container,
-  .skills__container {
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-      text-align: initial;
-  }
-  .about__img img {
-      width: 300px;
-  }
-  .work__container {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      column-gap: 2rem;
-  }
-  .contact__form {
-      width: 360px;
-  }
-  .contact__container {
-      justify-items: center;
-  }
 }
 
 @media screen and (min-width: 1024px) {

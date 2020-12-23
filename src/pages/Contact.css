@@ -1,0 +1,50 @@
+.contact__input {
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1.5px solid var(--second-color);
+    outline: none;
+    margin-bottom: var(--mb-4);
+}
+.contact__button {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    margin-left: auto;
+}
+.warning {
+    color: red;
+    text-align: center;
+    padding: .5rem 1rem;
+}
+.warning .bx-tired,
+.wpp-info .bxl-whatsapp {
+    margin-right: .5rem;
+}
+.wpp-info {
+    text-align: center;
+    padding: .5rem 1rem;
+    margin-top: 0;
+}
+.wpp-info a {
+  color: #000;
+}
+.wpp-info a:hover,
+.wpp-info a:active,
+.wpp-info a:focus {
+  color: var(--first-color);
+  transition: .3s;
+}
+
+@media screen and (min-width: 768px) {
+    .contact__form {
+        width: 360px;
+    }
+    .contact__container {
+        justify-items: center;
+    }
+}

@@ -12,11 +12,10 @@ function Header() {
 
                 <div className="nav__menu" id="nav-menu">
                     <ul className="nav__list">
-                        <li className="nav__item"><Link to="#home" className="nav__link active">Home</Link></li>
-                        <li className="nav__item"><Link to="#about" className="nav__link">About</Link></li>
-                        <li className="nav__item"><Link to="#skills" className="nav__link">Skills</Link></li>
-                        <li className="nav__item"><Link to="#work" className="nav__link">Work</Link></li>
-                        <li className="nav__item"><Link to="#contact" className="nav__link">Contact</Link></li>
+                        <li className="nav__item"><Link to="/" className="nav__link active">Home</Link></li>
+                        <li className="nav__item"><Link to="/skills" className="nav__link">Skills</Link></li>
+                        <li className="nav__item"><Link to="/work" className="nav__link">Work</Link></li>
+                        <li className="nav__item"><Link to="/contact" className="nav__link">Contact</Link></li>
                     </ul>
                 </div>
 

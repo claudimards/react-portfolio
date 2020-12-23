@@ -14,7 +14,7 @@ function Index() {
                     <h1 className="home__title">
                         Hi, <br />I'am <span className="home__title-color">Claudimar</span><br /> Web Developer
                     </h1>
-                    <a href="#contact" className="button">Contact</a>
+                    <Link to="/contact" className="button">Contact</Link>
                 </div>
 
                 <div className="home__social">
@@ -23,7 +23,7 @@ function Index() {
                 </div>
 
                 <div className="home__img">
-                    <img src="./images/perfil.png" alt="Foto do perfil" />
+                    <img src="./images/perfil.webp" alt="Foto do perfil" />
                 </div>
             </section>
 
@@ -32,13 +32,16 @@ function Index() {
 
                 <div className="about__container bd-grid">
                     <div className="about__img">
-                        <img src="./images/about.jpg" alt="Foto pessoal" />
+                        <img src="./images/about.webp" alt="Foto pessoal" />
                     </div>
 
                     <div>
                         <h2 className="about__subtitle">I'am Claudimar</h2>
                         <p className="about__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales mauris eu euismod dapibus. Aenean vitae mi a enim hendrerit scelerisque eu et nunc. Nunc suscipit nulla non tempor elementum. Vivamus auctor pellentesque massa id tincidunt.
+                            Graduado em Análise e Desenvolvimento de Sistemas pela Iescamp, atualmente trabalhando como desenvolvedor Front-End Jr na <Link to="https://nairuz.com.br/" target="_blank">Nairuz</Link>, e estudante entusiasmado das tecnologias Omnistack.
+                        </p>
+                        <p className="about__text">
+                            Como diz a <Link to="https://rocketseat.com.br/" target="_blank">"Rocketseat"</Link>: O aprendizado é contínuo e sempre havera um próximo nível. Então... bora codar!
                         </p>
                     </div>
                 </div>

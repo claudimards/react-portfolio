@@ -74,8 +74,7 @@
     }
 
     /* ABOUT SECTION */
-    .about__container,
-    .skills__container {
+    .about__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: initial;
