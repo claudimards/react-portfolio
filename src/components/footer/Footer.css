@@ -1,0 +1,27 @@
+/* Footer */
+.footer {
+    background-color: var(--second-color);
+    color: #FFF;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+}
+.footer__title {
+    font-size: 2rem;
+    margin-bottom: var(--mb-4);
+}
+.footer__social {
+    margin-bottom: var(--mb-4);
+}
+.footer__icon {
+    font-size: 1.5rem;
+    color: #FFF;
+    margin: 0 var(--mb-2);
+    transition: all .4s ease-in-out;
+}
+.footer__icon:hover {
+    padding: .1rem;
+    background-color: #FFF;
+    border-radius: 50%;
+    color: var(--first-color);
+}
