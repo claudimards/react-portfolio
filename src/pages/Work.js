@@ -13,60 +13,60 @@ function Work() {
                 <p className="about__text" >Projetos aos quais tenho trabalhado</p>
                 <div className="work__container bd-grid">
                     <div>
-                        <Link to="http://homolog-php.nairuz.com.br/coffee/" target="_blank">
+                        <a href="http://homolog-php.nairuz.com.br/coffee/" target="_blank">
                             <div className="work__img">
                                 <img src="./images/coffee-lover.webp" alt="Imagem de trabalho realizado" />
                             </div>
                             <h4>Coffee Lover</h4>
                             <p className="about__text" >Projeto de blog, desenvolvido em Wordpress</p>
-                        </Link>
+                        </a>
                     </div>
                     
                     <div>
-                        <Link to="#" target="_blank">
+                        <a href="#" target="_blank">
                             <div className="work__img">
                                 <img src="./images/work3.webp" alt="Imagem de trabalho realizado" />
                             </div>
                             <h4>Job title</h4>
                             <p className="about__text" ></p>
-                        </Link>
+                        </a>
                     </div>
                     <div>
-                        <Link to="#" target="_blank">
+                        <a href="#" target="_blank">
                             <div className="work__img">
                                 <img src="./images/work3.webp" alt="Imagem de trabalho realizado" />
                             </div>
                             <h4>Job title</h4>
                             <p className="about__text" ></p>
-                        </Link>
+                        </a>
                     </div>
                     <div>
-                        <Link to="#" target="_blank">
+                        <a href="#" target="_blank">
                             <div className="work__img">
                                 <img src="./images/work3.webp" alt="Imagem de trabalho realizado" />
                             </div>
                             <h4>Job title</h4>
                             <p className="about__text" ></p>
-                        </Link>
+                        </a>
                     </div>
                     <div>
-                        <Link to="#" target="_blank">
+                        <a href="#" target="_blank">
                             <div className="work__img">
                                 <img src="./images/work3.webp" alt="Imagem de trabalho realizado" />
                             </div>
                             <h4>Job title</h4>
                             <p className="about__text" ></p>
-                        </Link>
+                        </a>
                     </div>
 
                     <div>
-                        <Link to={"//https://grassycafe.mageshop.com.br/"} target="_blank">
+                        <a href="https://grassycafe.mageshop.com.br/" target="_blank">
                             <div className="work__img">
                                 <img src="./images/grassy-caffe.webp" alt="Imagem de trabalho realizado" />
                             </div>
                             <h4>Grassy Caffè</h4>
                             <p className="about__text" >Projeto de ecommerce, desenvolvido em HTML5, CSS3, JS, JQUERY e MAGENTO</p>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </section>

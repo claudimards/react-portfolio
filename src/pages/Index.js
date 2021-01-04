@@ -18,8 +18,8 @@ function Index() {
                 </div>
 
                 <div className="home__social">
-                    <Link to="https://www.linkedin.com/in/claudimards/" target="_blank" className="home__social-icon"><i className='bx bxl-linkedin' ></i></Link>
-                    <Link to="https://github.com/claudimards" target="_blank" className="home__social-icon"><i className='bx bxl-github' ></i></Link>
+                    <a href="https://www.linkedin.com/in/claudimards/" target="_blank" className="home__social-icon"><i className='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/claudimards" target="_blank" className="home__social-icon"><i className='bx bxl-github' ></i></a>
                 </div>
 
                 <div className="home__img">
@@ -41,7 +41,7 @@ function Index() {
                             Graduado em Análise e Desenvolvimento de Sistemas pela Iescamp, atualmente trabalhando como desenvolvedor Front-End Jr na <Link to="https://nairuz.com.br/" target="_blank">Nairuz</Link>, e estudante entusiasmado das tecnologias Omnistack.
                         </p>
                         <p className="about__text">
-                            Como diz a <Link to="https://rocketseat.com.br/" target="_blank">"Rocketseat"</Link>: O aprendizado é contínuo e sempre havera um próximo nível. Então... bora codar!
+                            Como diz a <a href="https://rocketseat.com.br/" target="_blank">"Rocketseat"</a>: O aprendizado é contínuo e sempre havera um próximo nível. Então... bora codar!
                         </p>
                     </div>
                 </div>
