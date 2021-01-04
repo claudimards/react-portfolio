@@ -110,6 +110,19 @@ function Skills() {
 
                     <div className="skills__data">
                         <div className="skills__names">
+                            <i className='bx bxl-react skills__icon' ></i>
+                            <span className="skills__name">React.Js</span>
+                        </div>
+
+                        <div>
+                            <span className="skills__percentage">35%</span>
+                        </div>
+
+                        <div className="skills__bar skills__react"></div>
+                    </div>
+
+                    <div className="skills__data">
+                        <div className="skills__names">
                             <i className='bx bxl-nodejs skills__icon' ></i>
                             <span className="skills__name">Node.Js</span>
                         </div>
