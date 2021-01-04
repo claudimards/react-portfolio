@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
 import './Contact.css'
@@ -12,7 +13,7 @@ function Contact() {
 
                 <h3 className="warning"><i className='bx bx-tired'></i>Contact form out of work, still in development</h3>
 
-                <h4 className="wpp-info"><a href="https://api.whatsapp.com/send?l=pt_BR&phone=19981828929" target="_blank" className=""><i className='bx bxl-whatsapp' ></i>Click here and get in touch via WhatsApp</a></h4>
+                <h4 className="wpp-info"><Link to={'//api.whatsapp.com/send?l=pt_BR&phone=19981828929'} target="_blank" className=""><i className='bx bxl-whatsapp' ></i>Click here and get in touch via WhatsApp</Link></h4>
 
                 <div className="contact__container bd-grid">
                     <form action="#" className="contact__form">
