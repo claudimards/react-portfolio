@@ -1,12 +1,8 @@
 import React from 'react'
-import Footer from '../components/footer/Footer'
-import Header from '../components/header/Header'
 import './Skills.css'
 
 function Skills() {
     return (
-        <>
-        <Header />
         <section className="skills section" id="skills">
             <h2 className="section-title">Skills</h2>
 
@@ -166,8 +162,6 @@ function Skills() {
                 </div>
             </div>
         </section>
-        <Footer />
-        </>
     )
 }
 

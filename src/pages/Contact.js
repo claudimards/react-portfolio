@@ -1,13 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Footer from '../components/footer/Footer'
-import Header from '../components/header/Header'
 import './Contact.css'
 
 function Contact() {
     return (
-        <>
-        <Header />
         <section className="contact section" id="contact">
                 <h2 className="section-title">Contact</h2>
 
@@ -26,8 +22,6 @@ function Contact() {
                     </form>
                 </div>
             </section>
-        <Footer />
-        </>
     )
 }
 

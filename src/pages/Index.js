@@ -1,13 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Footer from '../components/footer/Footer'
-import Header from '../components/header/Header'
 import './Index.css'
 
 function Index() {
     return (
-        <>
-        <Header />
         <main className="l-main">
             <section className="home bd-grid" id="home">
                 <div className="home__data">
@@ -47,8 +43,6 @@ function Index() {
                 </div>
             </section>
         </main>
-        <Footer />
-        </>
     )
 }
 

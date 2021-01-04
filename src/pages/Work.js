@@ -1,13 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Footer from '../components/footer/Footer'
-import Header from '../components/header/Header'
 import './Work.css'
 
 function Work() {
     return (
-        <>
-        <Header />
         <section className="work section" id="work">
                 <h2 className="section-title">Work</h2>
                 <p className="about__text" >Projetos aos quais tenho trabalhado</p>
@@ -70,8 +66,6 @@ function Work() {
                     </div>
                 </div>
             </section>
-        <Footer />   
-        </>
     )
 }
 
