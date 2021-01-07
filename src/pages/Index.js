@@ -1,8 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Index.css'
+import ScrollReveal from 'scrollreveal'
 
 function Index() {
+    const scrollReveal = ScrollReveal({
+        origin: 'top',
+        distance: '80px',
+        duration: 2000,
+        reset: true
+    })
+    scrollReveal.reveal('.home__title', {delay: 0})
+    scrollReveal.reveal('.button', {delay: 200})
+    scrollReveal.reveal('.home__img', {delay: 400})
+    scrollReveal.reveal('.home__social-icon', {interval: 200})
+    scrollReveal.reveal('.about__img', {})
+    scrollReveal.reveal('.about__subtitle', {delay: 200})
+    scrollReveal.reveal('.about__text', {delay: 400})
 
     return (
         <main className="l-main">

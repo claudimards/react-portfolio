@@ -1,7 +1,19 @@
 import React from 'react'
+import ScrollReveal from 'scrollreveal'
 import './Skills.css'
 
 function Skills() {
+    const scrollReveal = ScrollReveal({
+        origin: 'top',
+        distance: '80px',
+        duration: 2000,
+        reset: true
+    })
+    scrollReveal.reveal('.skills__subtitle', {})
+    scrollReveal.reveal('.skills__text', {delay: 200})
+    scrollReveal.reveal('.skills__data', {interval: 200})
+    scrollReveal.reveal('.skills__img', {delay: 400})
+
     return (
         <section className="skills section" id="skills">
             <h2 className="section-title">Skills</h2>
