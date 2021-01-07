@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './Index.css'
 
 function Index() {
+
     return (
         <main className="l-main">
             <section className="home bd-grid" id="home">
