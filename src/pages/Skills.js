@@ -1,18 +1,18 @@
 import React from 'react'
-import ScrollReveal from 'scrollreveal'
+import sr from '../components/scrollreveal/ScrollReveal'
 import './Skills.css'
 
 function Skills() {
-    const scrollReveal = ScrollReveal({
+    const config = {
         origin: 'top',
         distance: '80px',
         duration: 2000,
         reset: true
-    })
-    scrollReveal.reveal('.skills__subtitle', {})
-    scrollReveal.reveal('.skills__text', {delay: 200})
-    scrollReveal.reveal('.skills__data', {interval: 200})
-    scrollReveal.reveal('.skills__img', {delay: 400})
+    }
+    sr.reveal('.skills__subtitle', {}, config)
+    sr.reveal('.skills__text', {delay: 200}, config)
+    sr.reveal('.skills__data', {interval: 200}, config)
+    sr.reveal('.skills__img', {delay: 400}, config)
 
     return (
         <section className="skills section" id="skills">

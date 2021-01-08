@@ -1,22 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Index.css'
-import ScrollReveal from 'scrollreveal'
+import sr from '../components/scrollreveal/ScrollReveal'
 
 function Index() {
-    const scrollReveal = ScrollReveal({
+    const config = {
         origin: 'top',
         distance: '80px',
         duration: 2000,
         reset: true
-    })
-    scrollReveal.reveal('.home__title', {delay: 0})
-    scrollReveal.reveal('.button', {delay: 200})
-    scrollReveal.reveal('.home__img', {delay: 400})
-    scrollReveal.reveal('.home__social-icon', {interval: 200})
-    scrollReveal.reveal('.about__img', {})
-    scrollReveal.reveal('.about__subtitle', {delay: 200})
-    scrollReveal.reveal('.about__text', {delay: 400})
+    }
+    sr.reveal('.home__title', {delay: 0}, config)
+    sr.reveal('.button', {delay: 200}, config)
+    sr.reveal('.home__img', {delay: 400}, config)
+    sr.reveal('.home__social-icon', {interval: 200}, config)
+    sr.reveal('.about__img', {}, config)
+    sr.reveal('.about__subtitle', {delay: 200}, config)
+    sr.reveal('.about__text', {delay: 400}, config)
 
     return (
         <main className="l-main">

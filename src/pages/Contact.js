@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Contact.css'
-import ScrollReveal from 'scrollreveal'
+import sr from '../components/scrollreveal/ScrollReveal'
 
 function Contact() {
-    const scrollReveal = ScrollReveal({
+    const config = {
         origin: 'top',
         distance: '80px',
         duration: 2000,
         reset: true
-    })
-    scrollReveal.reveal('.contact__input', {interval: 200})
+    }
+    sr.reveal('.contact__input', {interval: 200}, config)
 
     return (
         <section className="contact section" id="contact">

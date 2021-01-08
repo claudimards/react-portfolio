@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ScrollReveal from 'scrollreveal'
+import sr from '../components/scrollreveal/ScrollReveal'
 import './Work.css'
 
 function Work() {
-    const scrollReveal = ScrollReveal({
+    const config = {
         origin: 'top',
         distance: '80px',
         duration: 2000,
         reset: true
-    })
-    scrollReveal.reveal('.work__img', {interval: 200})
+    }
+    sr.reveal('.work__img', {interval: 200}, config)
 
     return (
         <section className="work section" id="work">
