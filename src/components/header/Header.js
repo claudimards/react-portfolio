@@ -1,34 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import './Header.css'
 
 function Header() {
-    const showMenu = (toggleId, navId) => {
-        const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
+    const [openMenu, setOpenMenu] = useState(false)
+    const mobileMenu = () => {
+        setOpenMenu(!openMenu)
+    }
     
-        if (toggle && nav){
-            toggle.addEventListener('click', ()=> {
-                nav.classList.toggle('show')
-            })
-        }
-    }
-    showMenu('nav-toggle', 'nav-menu')
-
-    /* Active and Remove Menu */
-    const navLink = document.querySelectorAll('.nav__link')
-
-    function linkAction(){
-        // Active link
-        navLink.forEach(nav => nav.classList.remove('active'))
-        this.classList.add('active')
-
-        // Remove menu mobile
-        const navMenu = document.getElementById('nav-menu')
-        navMenu.classList.remove('show')
-    }
-
-    navLink.forEach( nav => nav.addEventListener('click', linkAction))
     return (
         <header className="l-header">
             <nav className="nav bd-grid">
@@ -36,17 +15,25 @@ function Header() {
                     <Link to="/" className="nav__logo">Claudimar</Link>
                 </div>
 
-                <div className="nav__menu" id="nav-menu">
+                <div className={openMenu ? 'nav__menu show' : 'nav__menu'} id="nav-menu">
                     <ul className="nav__list">
-                        <li className="nav__item"><Link to="/" className="nav__link active">Home</Link></li>
-                        <li className="nav__item"><Link to="/skills" className="nav__link">Skills</Link></li>
-                        <li className="nav__item"><Link to="/work" className="nav__link">Work</Link></li>
-                        <li className="nav__item"><Link to="/contact" className="nav__link">Contact</Link></li>
+                        <li className="nav__item" onClick={() => setOpenMenu(false)}>
+                            <NavLink to="/" exact className="nav__link" activeClassName="active">Home</NavLink>
+                        </li>
+                        <li className="nav__item" onClick={() => setOpenMenu(false)}>
+                            <NavLink to="/skills" className="nav__link" activeClassName="active">Skills</NavLink>
+                        </li>
+                        <li className="nav__item" onClick={() => setOpenMenu(false)}>
+                            <NavLink to="/work" className="nav__link" activeClassName="active">Work</NavLink>
+                        </li>
+                        <li className="nav__item" onClick={() => setOpenMenu(false)}>
+                            <NavLink to="/contact" className="nav__link" activeClassName="active">Contact</NavLink>
+                        </li>
                     </ul>
                 </div>
 
                 <div className="nav__toggle" id="nav-toggle">
-                    <i className='bx bx-menu'></i>
+                    <i className='bx bx-menu' onClick={mobileMenu}></i>
                 </div>
             </nav>
         </header>
