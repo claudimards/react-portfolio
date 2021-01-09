@@ -1,10 +1,11 @@
 {
-  "short_name": "Dev in Dev",
   "name": "A dev in dev",
+  "short_name": "Dev in Dev",
   "start_url": "/",
-  "display": "fullscreen",
-  "theme_color": "#4070f4",
+  "display": "standalone",
   "background_color": "#ffffff",
+  "theme_color": "#4070f4",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "favicon.ico",
