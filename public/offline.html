@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./images/icons/logo-192x192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Dev in Dev</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header,
+        .footer {
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #4070f4;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .offline-page {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .sorry-message,
+        .site-identity {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 100%;
+            padding: 1rem;
+        }
+
+        .text,
+        .site-name {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #4070f4;
+            font-weight: 600;
+            padding: .5rem 0;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .text, 
+            .site-name {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .text, .site-name {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .offline-page {
+                display: initial;
+            }
+
+            .sorry-message, 
+            .site-identity {
+                width: 100%;
+            }
+
+            .text, 
+            .site-name {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            .text, .site-name {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .text, .site-name {
+                font-size: 10px;
+            }
+
+            footer p {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <p>A DEV IN DEV</p>
+    </header>
+    <main class="offline-page">
+        <div class="sorry-message">
+            <img src="./images/offline.png" alt="Sem conexão com a internet" width="192" height="192">
+            <p class="text">I'm sorry, this site does not work offline</p>
+            <p class="text">Check your internet connection and try again</p>
+        </div>
+        <div class="site-identity">
+            <img class="logo" src="./images/icons/logo-192x192.png" alt="A dev in dev logo">
+            <p class="site-name">A dev in dev</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>All rights reserved &copy; A DEV IN DEV 2020</p>
+    </footer>
+</body>
+</html>
