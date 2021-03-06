@@ -170,7 +170,7 @@ function Skills() {
                 </div>
 
                 <div>
-                    <img src="./images/work3.webp" alt="Imagem apresentação" className="skills__img" />
+                    <img src="./images/skill-image.webp" alt="Imagem apresentação" className="skills__img" />
                 </div>
             </div>
         </section>
