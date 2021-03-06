@@ -29,18 +29,23 @@
     color: var(--first-color);
     transition: .3s;
 }
-.nav__link:hover::after {
+.nav__link::after {
     position: absolute;
     content: '';
     width: 100%;
-    height: 0.18rem;
+    height: 0.25rem;
     left: 0;
     top: 2rem;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+}
+.nav__link:hover::after {
     background-color: var(--first-color);
 }
 .nav__logo {
     color: var(--second-color);
     font-size: var(--mb-3);
+    transition: all .3s ease-in-out;
 }
 .nav__logo:hover {
     color: var(--first-color);
@@ -57,7 +62,7 @@
     position: absolute;
     content: '';
     width: 100%;
-    height: 0.18rem;
+    height: 0.25rem;
     left: 0;
     top: 2rem;
     background-color: var(--first-color);
@@ -85,5 +90,6 @@
     }
     .nav__link {
         color: var(--second-color);
+        transition: all .3s ease-in-out;
     }
 }
