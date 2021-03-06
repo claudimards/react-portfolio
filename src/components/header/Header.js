@@ -12,7 +12,7 @@ function Header() {
         <header className="l-header">
             <nav className="nav bd-grid">
                 <div>
-                    <Link to="/" className="nav__logo">Claudimar</Link>
+                    <Link to="/" className="nav__logo" onClick={() => setOpenMenu(false)}>Claudimar</Link>
                 </div>
 
                 <div className={openMenu ? 'nav__menu show' : 'nav__menu'} id="nav-menu">
