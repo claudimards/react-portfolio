@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Index.css'
-import sr from '../components/scrollreveal/ScrollReveal'
+import sr from '../../components/scrollreveal/ScrollReveal'
 
 function Index() {
     const config = {

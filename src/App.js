@@ -2,10 +2,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import ScrollToTop from "./components/scrolltotop/ScrollToTop";
-import Contact from "./pages/Contact";
-import Index from "./pages/Index";
-import Skills from "./pages/Skills";
-import Work from "./pages/Work";
+import Contact from "./pages/contact/Contact";
+import Index from "./pages/index/Index";
+import Skills from "./pages/skills/Skills";
+import Work from "./pages/work/Work";
 
 function App() {
   return (

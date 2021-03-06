@@ -1,5 +1,5 @@
 import React from 'react'
-import sr from '../components/scrollreveal/ScrollReveal'
+import sr from '../../components/scrollreveal/ScrollReveal'
 import './Skills.css'
 
 function Skills() {

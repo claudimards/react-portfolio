@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import sr from '../components/scrollreveal/ScrollReveal'
+import sr from '../../components/scrollreveal/ScrollReveal'
 import './Work.css'
 
 function Work() {
