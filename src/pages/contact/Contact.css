@@ -2,11 +2,11 @@
     width: 100%;
     font-size: var(--normal-font-size);
     font-weight: var(--font-semi);
-    padding: 1rem;
-    border-radius: .5rem;
+    padding: var(--mb-2);
+    border-radius: var(--mb-1);
     border: 1.5px solid var(--second-color);
     outline: none;
-    margin-bottom: var(--mb-4);
+    margin-bottom: var(--mb-1);
 }
 .contact__button {
     display: block;
@@ -15,23 +15,21 @@
     font-size: var(--normal-font-size);
     cursor: pointer;
     margin-left: auto;
+    transition: all .3s ease-in-out;
 }
-.warning {
-    color: red;
-    text-align: center;
-    padding: .5rem 1rem;
-}
-.warning .bx-tired,
+
 .wpp-info .bxl-whatsapp {
-    margin-right: .5rem;
+    margin-right: var(--mb-1);
 }
 .wpp-info {
     text-align: center;
-    padding: .5rem 1rem;
-    margin-top: 0;
+    padding: .25rem 1rem;
+    margin: 0;
+    line-height: 1;
 }
 .wpp-info a {
   color: #000;
+  transition: all .3s ease-in-out;
 }
 .wpp-info a:hover,
 .wpp-info a:active,
@@ -40,11 +38,77 @@
   transition: .3s;
 }
 
+.status {
+    position: relative;
+    font-size: var(--normal-font-size);
+    padding: 0.5rem 1.5rem;
+    margin-top: var(--mb-1);
+    border-radius: var(--mb-1);
+    opacity: 0;
+    transition: all .75s ease-in-out;
+}
+.status.success {
+    background: #69dc69;
+    display: block;
+}
+.status.error {
+    background: #ef3a3a;
+    display: block;
+}
+.fade {
+    opacity: 1;
+}
+.status .status-text-success,
+.status .status-text-error {
+    line-height: 1;
+    font-weight: var(--font-semi);
+    color: #FFF;
+    text-align: center;
+    display: none;
+}
+.status .status-text-success .bx-check-double,
+.status .status-text-error .bx-error-circle {
+    font-weight: var(--font-semi);
+    margin-right: var(--mb-1);
+}
+.status.success .status-text-success,
+.status.error .status-text-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    position: absolute;
+    display: none;
+}
+.loader.active-load {
+    display: block;
+}
+.loader .bx-loader-circle {
+    font-size: 2rem;
+    color: #4070f4ed;
+    -webkit-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .contact__form {
         width: 360px;
     }
     .contact__container {
+        margin-top: var(--mb-3);
         justify-items: center;
     }
 }
